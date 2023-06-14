@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Restaurant apps for you" />
+  <meta name="theme-color" content="#232946" />
+
+  <link rel="apple-touch-icon" href="./logo512x512.png" />
+  <link rel="icon" href="./logo32x32.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="manifest" href="./app.webmanifest" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    crossorigin="anonymous" />
+
+  <title>Dims Resto</title>
+</head>
+
+<body>
+  <a href="#maincontent" class="skip-link">Menuju ke konten</a>
+  <header class="app-bar">
+    <div class="app-bar__menu">
+      <button id="hamburgerButton">☰</button>
+    </div>
+    <div class="app-bar__brand">
+      <h1>Dims Resto</h1>
+    </div>
+    <nav id="navigationDrawer" class="app-bar__navigation">
+      <ul>
+        <li><a href="#/restaurant-list">Restaurant</a></li>
+        <li><a href="#/like">Favorite</a></li>
+        <li>
+          <a href="https://www.linkedin.com/in/dimas-marsus-pandega/" target="_blank" rel="noopener">About Us</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <picture>
+    <source media="(max-width: 600px)" srcset="./hero/hero-image_4_mobile.jpg" class="responsive lazyload" />
+    <source media="(min-width: 601px)" srcset="./hero/hero-image_4_desktop.jpg" class="responsive lazyload" />
+    <img src="./hero/hero-image_4_desktop.jpg" alt=" " class="responsive lazyload" loading="lazy" />
+  </picture>
+  <main id="mainContent" tabindex="0"></main>
+  <footer>
+    <div id="footerTools">
+      <button id="subscribePushNotification" class="btn">
+        Subscribe Push Notification
+      </button>
+      <button id="unsubscribePushNotification" class="btn">
+        Unsubscribe Push Notification
+      </button>
+    </div>
+    <p>Copyright © 2023 - Dims Resto Apps</p>
+  </footer>
+  <div class="loading"></div>
+</body>
+
+</html>
